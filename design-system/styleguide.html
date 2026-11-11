@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style guide | Day 1 CPT Programs</title>
+  <meta name="description" content="Design tokens and components for Day 1 CPT Programs.">
+  <meta name="robots" content="noindex">
+  <link rel="preload" href="fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/public-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="c-skip-link" href="#main">Skip to main content</a>
+  <header class="c-header">
+    <div class="l-container c-header__inner">
+      <a class="c-logo" href="sample-home.html"><span class="c-logo__mark" aria-hidden="true">1</span><span class="c-logo__text">Day 1 CPT <span>Programs</span></span></a>
+      <nav class="c-nav c-nav--desktop" aria-label="Main">
+        <ul class="c-nav__list">
+            <li><a href="sample-guide.html">What is Day 1 CPT</a></li>
+            <li><a href="#">Universities</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Rule changes</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a class="c-button c-button--small" href="#">Book a consultation</a></li>
+        </ul>
+      </nav>
+      <details class="c-menu">
+        <summary>Menu</summary>
+        <nav class="c-nav c-menu__panel" aria-label="Main, mobile">
+          <ul class="c-nav__list">
+            <li><a href="sample-guide.html">What is Day 1 CPT</a></li>
+            <li><a href="#">Universities</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Rule changes</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a class="c-button" href="#">Book a consultation</a></li>
+          </ul>
+        </nav>
+      </details>
+    </div>
+  </header>
+  
+  <main id="main">
+
+    <div class="l-container">
+      <header class="c-page-head">
+        <p class="c-eyebrow">Design system · version 0.1</p>
+        <h1>Day 1 CPT Programs style guide</h1>
+        <p class="c-lead">An editorial, document-like identity: warm paper, dark ink, one evergreen accent and a highlighter. Built to read like a reference, not an advertisement.</p>
+      </header>
+
+      <section class="l-section--tight u-stack-lg" aria-labelledby="sg-colour" style="padding-block: var(--space-6)">
+        <h2 id="sg-colour">Colour</h2>
+        <div class="sg-swatches">
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-ink); color: var(--color-on-ink)">Aa</div><div class="sg-swatch__meta"><strong>Ink</strong><code>#14211f</code><span class="u-muted">15.6:1 on paper</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-ink-soft); color: var(--color-on-ink)">Aa</div><div class="sg-swatch__meta"><strong>Ink soft</strong><code>#44524f</code><span class="u-muted">7.7:1 on paper</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-muted); color: var(--color-on-ink)">Aa</div><div class="sg-swatch__meta"><strong>Muted</strong><code>#5b6966</code><span class="u-muted">5.4:1 on paper</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-paper); color: var(--color-ink)">Aa</div><div class="sg-swatch__meta"><strong>Paper</strong><code>#fbf8f3</code><span class="u-muted">page background</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-surface); color: var(--color-ink)">Aa</div><div class="sg-swatch__meta"><strong>Surface</strong><code>#ffffff</code><span class="u-muted">cards, inputs</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-sand); color: var(--color-ink)">Aa</div><div class="sg-swatch__meta"><strong>Sand</strong><code>#f1ebe0</code><span class="u-muted">alternate sections</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-line); color: var(--color-ink)">Aa</div><div class="sg-swatch__meta"><strong>Line</strong><code>#d9d0c1</code><span class="u-muted">hairlines</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-green); color: var(--color-on-ink)">Aa</div><div class="sg-swatch__meta"><strong>Evergreen</strong><code>#0b5345</code><span class="u-muted">9.0:1 with white</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-green-dark); color: var(--color-on-ink)">Aa</div><div class="sg-swatch__meta"><strong>Evergreen dark</strong><code>#083d33</code><span class="u-muted">hover</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-green-tint); color: var(--color-ink)">Aa</div><div class="sg-swatch__meta"><strong>Evergreen tint</strong><code>#e3efea</code><span class="u-muted">quiet highlight</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-mark); color: var(--color-ink)">Aa</div><div class="sg-swatch__meta"><strong>Highlighter</strong><code>#f4d35e</code><span class="u-muted">11.3:1 with ink</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-caution); color: var(--color-on-ink)">Aa</div><div class="sg-swatch__meta"><strong>Caution</strong><code>#8a4b08</code><span class="u-muted">5.8:1 on its tint</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-info); color: var(--color-on-ink)">Aa</div><div class="sg-swatch__meta"><strong>Info</strong><code>#274c77</code><span class="u-muted">7.4:1 on its tint</span></div></div>
+          <div class="sg-swatch"><div class="sg-swatch__chip" style="background: var(--color-danger); color: var(--color-on-ink)">Aa</div><div class="sg-swatch__meta"><strong>Danger</strong><code>#9b2c2c</code><span class="u-muted">7.5:1 on white</span></div></div>
+        </div>
+      </section>
+
+      <section class="u-stack-lg" aria-labelledby="sg-type" style="padding-block: var(--space-6)">
+        <h2 id="sg-type">Type</h2>
+        <div class="sg-type">
+          <div><small>H1 · Source Serif 4 600 · 34 to 52px</small><p style="font: 600 var(--text-h1)/var(--leading-tight) var(--font-serif); letter-spacing: -0.012em">Explained plainly</p></div>
+          <div><small>H2 · Source Serif 4 600 · 26 to 34px</small><p style="font: 600 var(--text-h2)/var(--leading-tight) var(--font-serif)">How Day 1 CPT works</p></div>
+          <div><small>H3 · Source Serif 4 600 · 20 to 23px</small><h3>Check the requirements</h3></div>
+          <div><small>Lead · Public Sans 400 · 18 to 21px</small><p class="c-lead">Compare degree levels and universities, and understand the trade-offs before you enroll.</p></div>
+          <div><small>Body · Public Sans 400 · 16 to 17px · line height 1.6</small><p class="u-measure">Curricular Practical Training is work, an internship or a practicum that is an integral part of an established curriculum. <a href="#">Links are always underlined</a>, and <mark>the highlighter marks a phrase</mark> sparingly.</p></div>
+          <div><small>Eyebrow · Public Sans 700 · 13px · uppercase</small><p class="c-eyebrow">Start here</p></div>
+        </div>
+      </section>
+
+      <section class="u-stack-lg" aria-labelledby="sg-space" style="padding-block: var(--space-6)">
+        <h2 id="sg-space">Space</h2>
+        <div class="sg-space">
+          <div><span>space-1 · 4px</span><i style="width: var(--space-1)"></i></div>
+          <div><span>space-2 · 8px</span><i style="width: var(--space-2)"></i></div>
+          <div><span>space-3 · 12px</span><i style="width: var(--space-3)"></i></div>
+          <div><span>space-4 · 16px</span><i style="width: var(--space-4)"></i></div>
+          <div><span>space-5 · 24px</span><i style="width: var(--space-5)"></i></div>
+          <div><span>space-6 · 32px</span><i style="width: var(--space-6)"></i></div>
+          <div><span>space-7 · 48px</span><i style="width: var(--space-7)"></i></div>
+          <div><span>space-8 · 64px</span><i style="width: var(--space-8)"></i></div>
+          <div><span>space-9 · 96px</span><i style="width: var(--space-9)"></i></div>
+        </div>
+      </section>
+
+      <section class="u-stack-lg" aria-labelledby="sg-actions" style="padding-block: var(--space-6)">
+        <h2 id="sg-actions">Buttons, links and tags</h2>
+        <div class="c-button-row">
+          <a class="c-button" href="#">Book a consultation</a>
+          <a class="c-button c-button--secondary" href="#">What is Day 1 CPT?</a>
+          <a class="c-arrow-link" href="#">See all rule changes</a>
+        </div>
+        <div class="c-button-row">
+          <span class="c-tag c-tag--in-effect">In effect</span>
+          <span class="c-tag c-tag--blocked">Blocked by court order</span>
+          <span class="c-tag c-tag--proposed">Proposed</span>
+          <span class="c-tag c-tag--partner">Featured partner</span>
+          <span class="c-tag">No affiliation</span>
+        </div>
+      </section>
+
+      <section class="u-stack-lg" aria-labelledby="sg-callouts" style="padding-block: var(--space-6)">
+        <h2 id="sg-callouts">Direct answer and callouts</h2>
+        <div class="c-answer"><p class="c-answer__label">Short answer</p><p>The first paragraph of every guide answers the page's question in 40 to 70 words, so it can be quoted on its own.</p></div>
+        <div class="c-callout u-measure"><p class="c-callout__title">Note</p><p>Used for a helpful aside that is not a warning.</p></div>
+        <div class="c-callout c-callout--caution u-measure"><p class="c-callout__title">Caution</p><p>Used where a mistake has consequences for status or eligibility.</p></div>
+      </section>
+
+      <section class="u-stack-lg" aria-labelledby="sg-tracker" style="padding-block: var(--space-6)">
+        <h2 id="sg-tracker">Rule tracker entry</h2>
+        <ol class="c-timeline">
+          <li><time datetime="2026-09-14">14 Sep 2026</time><div class="c-timeline__body"><p><span class="c-tag c-tag--blocked">Blocked by court order</span></p><h3>Court blocks the fixed admission period rule</h3><p>One- or two-sentence summary, followed by the source. <a href="#">Source</a></p></div></li>
+          <li><time datetime="2026-08-24">24 Aug 2026</time><div class="c-timeline__body"><p><span class="c-tag c-tag--in-effect">Guidance in effect</span></p><h3>SEVP publishes questions and answers on CPT</h3><p>One- or two-sentence summary, followed by the source. <a href="#">Source</a></p></div></li>
+        </ol>
+      </section>
+
+      <section class="u-stack-lg" aria-labelledby="sg-schools" style="padding-block: var(--space-6)">
+        <h2 id="sg-schools">Other university listing</h2>
+        <p class="u-measure u-muted">Schools other than the featured partner get this plain row: no recommendation label, no inquiry button, and every fact tied to the school's own page.</p>
+        <div>
+          <article class="c-school">
+            <div><h3><span class="c-placeholder">University name</span></h3><p class="c-school__meta"><span class="c-tag">No affiliation</span> · Last verified <span class="c-placeholder">date</span></p></div>
+            <dl class="c-facts">
+              <div><dt>CPT policy</dt><dd><span class="c-placeholder">Quoted from the school's website</span> <a class="c-source-ref" href="#">[source]</a></dd></div>
+              <div><dt>Accreditation</dt><dd><span class="c-placeholder">Accreditor</span> <a class="c-source-ref" href="#">[source]</a></dd></div>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="u-stack-lg" aria-labelledby="sg-form" style="padding-block: var(--space-6) var(--space-8)">
+        <h2 id="sg-form">Form</h2>
+        <form class="c-form" action="#" method="post" novalidate>
+          <div class="c-field"><label for="sg-name">Full name</label><input class="c-input" id="sg-name" name="name" autocomplete="name"></div>
+          <div class="c-field"><label for="sg-email">Email</label><input class="c-input" id="sg-email" name="email" type="email" autocomplete="email" aria-invalid="true" aria-describedby="sg-email-error" value="name@"><p class="c-field__error" id="sg-email-error">Enter a full email address, such as name@example.com.</p></div>
+          <div class="c-field"><label for="sg-status">Current status</label><p class="c-field__hint" id="sg-status-hint">This helps us prepare. You can choose "Not sure".</p><select class="c-select" id="sg-status" name="status" aria-describedby="sg-status-hint"><option>F-1, on OPT or STEM OPT</option><option>H-1B</option><option>Outside the United States</option><option>Not sure</option></select></div>
+          <div class="c-field"><label for="sg-message">What would you like to discuss?</label><textarea class="c-textarea" id="sg-message" name="message"></textarea></div>
+          <label class="c-check"><input type="checkbox" name="consent"><span>I agree to be contacted about my inquiry. See the <a href="#">privacy policy</a>.</span></label>
+          <div><button class="c-button" type="submit">Request a consultation</button></div>
+          <p class="u-small u-muted">An advisor replies by email. This is general guidance, not legal advice.</p>
+        </form>
+      </section>
+    </div>
+
+  </main>
+  <footer class="c-footer">
+    <div class="l-container">
+      <div class="c-footer__grid">
+        <div>
+          <a class="c-logo" href="sample-home.html"><span class="c-logo__mark" aria-hidden="true">1</span><span class="c-logo__text">Day 1 CPT <span>Programs</span></span></a>
+          <p>Plain-language guides to Curricular Practical Training for F-1 students, checked against federal regulations and official guidance.</p>
+        </div>
+        <nav aria-label="Guides">
+          <h2>Guides</h2>
+          <ul>
+            <li><a href="sample-guide.html">What is Day 1 CPT?</a></li>
+            <li><a href="#">Requirements and eligibility</a></li>
+            <li><a href="#">How to apply</a></li>
+            <li><a href="#">Is Day 1 CPT legal?</a></li>
+            <li><a href="#">Day 1 CPT vs OPT</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="About this site">
+          <h2>About this site</h2>
+          <ul>
+            <li><a href="#">Who runs this site</a></li>
+            <li><a href="#">Editorial policy and sources</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="c-footer__legal">
+        <p>Day 1 CPT Programs is operated by EduConnect USA, an enrollment partner of Alliant University. Partner programs are labelled where they appear.</p>
+        <p>Immigration information on this site is general guidance, not legal advice. Confirm your situation with your Designated School Official or an immigration attorney. Admission decisions are made by universities, employment decisions by employers, and accreditation is granted by the relevant accrediting bodies.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
