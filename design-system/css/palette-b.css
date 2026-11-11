@@ -1,0 +1,34 @@
+/* Palette B: single-hue blue scale.
+   Source colours: #e3f2fd #bbdefb #90caf9 #64b5f6 #42a5f5 #2196f3 #1e88e5
+   #1976d2 #1565c0 #0d47a1. Load after tokens.css. */
+:root {
+  --color-ink: #0b1f3f;           /* darker than #0d47a1, for body text */
+  --color-ink-soft: #3a4d6b;
+  --color-muted: #55667f;
+  --color-paper: #fbfdff;
+  --color-surface: #ffffff;
+  --color-sand: #e3f2fd;
+  --color-line: #bbdefb;
+  --color-line-strong: #5a86b8;   /* between #64b5f6 and #1976d2; the scale has no step at 3:1 */
+
+  --color-accent: #1565c0;
+  --color-accent-dark: #0d47a1;
+  --color-accent-line: #2196f3;
+  --color-accent-tint: #e3f2fd;
+  --color-action: #1565c0;        /* lighter steps fail with white text */
+  --color-action-hover: #0d47a1;
+  --color-on-action: #ffffff;
+  --color-highlight: #90caf9;
+  --color-highlight-tint: #e3f2fd;
+  --color-logo-accent: #1565c0;
+
+  --color-ok: #1b5e3a;            /* outside the scale: status needs a second hue */
+  --color-ok-tint: #e1f1e8;
+  --color-info: #0d47a1;
+  --color-info-tint: #e3f2fd;
+
+  --color-deep: #0d47a1;
+  --color-on-deep: #ffffff;
+  --color-on-deep-muted: #c7ddf7;
+  --color-accent-on-deep: #bbdefb;
+}

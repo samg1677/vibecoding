@@ -1,6 +1,6 @@
 # Stage 4 — Design system
 
-**Version 0.1, 2026-11-11. Awaiting review.**
+**Version 0.2, 2026-11-11. Awaiting a palette decision.**
 
 A new, independent brand for Day 1 CPT Programs. It shares nothing visual with
 EduConnect USA (no purple, orange, teal or Arial). EduConnect's voice, claims
@@ -36,7 +36,46 @@ Three elements carry the identity:
 3. **The rule-status panel.** Current state of each rule, with a plain label
    (in effect, blocked, proposed).
 
-## Colour
+## Palette options under review
+
+Colour tokens are named by role (accent, action, highlight, deep), so a
+palette is one small override file loaded after `tokens.css`. Three exist:
+
+| Option | File | Sample pages |
+|---|---|---|
+| Original: evergreen on warm paper | `tokens.css` defaults | `sample-home.html`, `sample-guide.html` |
+| A: navy, teal and red | `css/palette-a.css` | `sample-home-palette-a.html`, `sample-guide-palette-a.html` |
+| B: single-hue blue scale | `css/palette-b.css` | `sample-home-palette-b.html`, `sample-guide-palette-b.html` |
+
+**Palette A** (`#053c5e` `#1f7a8c` `#a31621` `#db222a` `#bfdbf7`)
+
+| Role | Colour | Note |
+|---|---|---|
+| Dark sections, link hover | `#053c5e` | as supplied; white on it 11.1:1 |
+| Primary button | `#a31621`, hover `#db222a` | as supplied; white on them 7.8:1 and 4.9:1 |
+| Rules, markers, arrows | `#1f7a8c` | as supplied, non-text use |
+| Links and small labels | `#186878` | **darkened** from `#1f7a8c`, which is 4.4:1 on the light-blue sections |
+| Highlight, partner label | `#bfdbf7` | as supplied; ink on it 11.0:1 |
+| Section tint | `#e9f2fc` | lightened `#bfdbf7` |
+| Body text | `#0b2536` | darker navy derived from `#053c5e` |
+
+**Palette B** (`#e3f2fd` to `#0d47a1`)
+
+| Role | Colour | Note |
+|---|---|---|
+| Dark sections, hover | `#0d47a1` | as supplied; white on it 8.6:1 |
+| Links, primary button | `#1565c0` | as supplied; white on it 5.8:1. `#1976d2` is 4.6:1; `#1e88e5` and lighter fail with white text |
+| Rules, markers | `#2196f3` | as supplied, non-text use |
+| Highlight, partner label | `#90caf9` | as supplied |
+| Section tint, hairlines | `#e3f2fd`, `#bbdefb` | as supplied |
+| Input borders | `#5a86b8` | **added**: the scale has no step that reaches 3:1 on white |
+| Body text | `#0b1f3f` | darker than `#0d47a1` |
+| "In effect" status | `#1b5e3a` on `#e1f1e8` | **added**: status labels need a second hue |
+
+Once one is chosen it replaces the defaults in `tokens.css`, the other files
+are deleted, and the table below is rewritten for it.
+
+## Colour (original option)
 
 | Token | Hex | Use | Contrast |
 |---|---|---|---|
@@ -48,9 +87,9 @@ Three elements carry the identity:
 | `--color-sand` | `#f1ebe0` | Alternate sections | — |
 | `--color-line` | `#d9d0c1` | Hairlines | decorative |
 | `--color-line-strong` | `#8c8576` | Input borders | 3.5:1 on paper |
-| `--color-green` | `#0b5345` | Links, primary buttons | 8.5:1 on paper; white on it 9.0:1 |
-| `--color-green-dark` | `#083d33` | Hover | white on it 12.2:1 |
-| `--color-mark` | `#f4d35e` | Highlighter, partner label, button on dark | ink on it 11.3:1 |
+| `--color-accent`, `--color-action` | `#0b5345` | Links, primary buttons | 8.5:1 on paper; white on it 9.0:1 |
+| `--color-accent-dark`, `--color-action-hover` | `#083d33` | Hover | white on it 12.2:1 |
+| `--color-highlight` | `#f4d35e` | Highlighter, partner label, button on dark | ink on it 11.3:1 |
 | `--color-caution` | `#8a4b08` | "Blocked", cautions | 5.8:1 on its tint |
 | `--color-info` | `#274c77` | "Proposed" | 7.4:1 on its tint |
 | `--color-danger` | `#9b2c2c` | Form errors | 7.5:1 on white |
