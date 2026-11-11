@@ -11,7 +11,7 @@ No Java application code exists yet. The project is being delivered in stages:
 | 1 | [Architecture decision](docs/01-architecture-decision.md) | Approved |
 | 2 | [Keyword research and search-intent map](docs/02-keyword-intent-map.md) | Approved |
 | 3 | [Sitemap and content architecture](docs/03-sitemap-content-architecture.md) | Approved |
-| 4 | [Design system](docs/04-design-system.md) ([style guide](design-system/styleguide.html)) | Drafted, awaiting review |
+| 4 | [Design system](docs/04-design-system.md) ([style guide](design-system/styleguide.html), [sample copy](docs/sample-copy.md)) | Drafted, awaiting review |
 | 5 | Java application | Not started |
 | 6 | WordPress CMS integration | Not started |
 | 7 | SEO and AEO implementation | Not started |

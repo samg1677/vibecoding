@@ -1,6 +1,6 @@
 # Stage 4 — Design system
 
-**Version 0.2, 2026-11-11. Awaiting a palette decision.**
+**Version 0.3, 2026-11-11. Blue and red palette. Awaiting review.**
 
 A new, independent brand for Day 1 CPT Programs. It shares nothing visual with
 EduConnect USA (no purple, orange, teal or Arial). EduConnect's voice, claims
@@ -22,8 +22,8 @@ illustrative and unreviewed. Striped text marks facts that must be supplied.
 
 ## Direction
 
-The site is a reference, so it looks like a well-set document: warm paper,
-dark ink, hairline rules, numbered sections, and one accent colour. It avoids
+The site is a reference, so it looks like a well-set document: a near-white
+page, dark ink, hairline rules, numbered sections, and two colours. It avoids
 the usual marketing-site signals: no gradients, no stock photography of
 students, no icon grids, no drop shadows, no scroll animation.
 
@@ -36,66 +36,54 @@ Three elements carry the identity:
 3. **The rule-status panel.** Current state of each rule, with a plain label
    (in effect, blocked, proposed).
 
-## Palette options under review
+## Colour
 
-Colour tokens are named by role (accent, action, highlight, deep), so a
-palette is one small override file loaded after `tokens.css`. Three exist:
+Two colours: **blue is primary, red is secondary.** Blue carries structure,
+links and labels. Red is reserved for the action button and for cautions.
 
-| Option | File | Sample pages |
-|---|---|---|
-| Original: evergreen on warm paper | `tokens.css` defaults | `sample-home.html`, `sample-guide.html` |
-| A: navy, teal and red | `css/palette-a.css` | `sample-home-palette-a.html`, `sample-guide-palette-a.html` |
-| B: single-hue blue scale | `css/palette-b.css` | `sample-home-palette-b.html`, `sample-guide-palette-b.html` |
-
-**Palette A** (`#053c5e` `#1f7a8c` `#a31621` `#db222a` `#bfdbf7`)
-
-| Role | Colour | Note |
-|---|---|---|
-| Dark sections, link hover | `#053c5e` | as supplied; white on it 11.1:1 |
-| Primary button | `#a31621`, hover `#db222a` | as supplied; white on them 7.8:1 and 4.9:1 |
-| Rules, markers, arrows | `#1f7a8c` | as supplied, non-text use |
-| Links and small labels | `#186878` | **darkened** from `#1f7a8c`, which is 4.4:1 on the light-blue sections |
-| Highlight, partner label | `#bfdbf7` | as supplied; ink on it 11.0:1 |
-| Section tint | `#e9f2fc` | lightened `#bfdbf7` |
-| Body text | `#0b2536` | darker navy derived from `#053c5e` |
-
-**Palette B** (`#e3f2fd` to `#0d47a1`)
-
-| Role | Colour | Note |
-|---|---|---|
-| Dark sections, hover | `#0d47a1` | as supplied; white on it 8.6:1 |
-| Links, primary button | `#1565c0` | as supplied; white on it 5.8:1. `#1976d2` is 4.6:1; `#1e88e5` and lighter fail with white text |
-| Rules, markers | `#2196f3` | as supplied, non-text use |
-| Highlight, partner label | `#90caf9` | as supplied |
-| Section tint, hairlines | `#e3f2fd`, `#bbdefb` | as supplied |
-| Input borders | `#5a86b8` | **added**: the scale has no step that reaches 3:1 on white |
-| Body text | `#0b1f3f` | darker than `#0d47a1` |
-| "In effect" status | `#1b5e3a` on `#e1f1e8` | **added**: status labels need a second hue |
-
-Once one is chosen it replaces the defaults in `tokens.css`, the other files
-are deleted, and the table below is rewritten for it.
-
-## Colour (original option)
+**Primary: blue**
 
 | Token | Hex | Use | Contrast |
 |---|---|---|---|
-| `--color-ink` | `#14211f` | Text, dark sections | 15.6:1 on paper |
-| `--color-ink-soft` | `#44524f` | Secondary text | 7.7:1 on paper |
-| `--color-muted` | `#5b6966` | Captions, meta | 5.4:1 on paper, 4.8:1 on sand |
-| `--color-paper` | `#fbf8f3` | Page background | — |
+| `--blue-900` | `#053c5e` | Dark sections, link hover, "in effect" label | white on it 11.6:1 |
+| `--blue-700` | `#0a5f94` | Links, small labels, rules, arrows | 6.6:1 on page, 6.0:1 on tint |
+| `--blue-200` | `#bfdbf7` | Highlight, partner label, button on dark | ink on it 11.0:1 |
+| `--blue-100` | `#d6e8fb` | Tag background | blue 900 on it 9.3:1 |
+| `--blue-50` | `#e9f2fc` | Alternate sections, notes | — |
+| `--blue-25` | `#f8fbfe` | Page background | — |
+
+**Secondary: red**
+
+| Token | Hex | Use | Contrast |
+|---|---|---|---|
+| `--red-700` | `#a31621` | Primary button, cautions, form errors | white on it 7.8:1 |
+| `--red-500` | `#db222a` | Button hover, logo bar | white on it 4.9:1 |
+| `--red-50` | `#fbe6e7` | Caution and error background | red 700 on it 6.5:1 |
+
+**Neutrals**
+
+| Token | Hex | Use | Contrast |
+|---|---|---|---|
+| `--color-ink` | `#0b2536` | Body text | 15.2:1 on page |
+| `--color-ink-soft` | `#3c5263` | Secondary text | 7.8:1 on page |
+| `--color-muted` | `#566b7b` | Captions, meta | 5.3:1 on page, 4.9:1 on tint |
+| `--color-line` | `#c5d6e6` | Hairlines | decorative |
+| `--color-line-strong` | `#6b8296` | Input borders | 3.9:1 on page |
 | `--color-surface` | `#ffffff` | Cards, inputs | — |
-| `--color-sand` | `#f1ebe0` | Alternate sections | — |
-| `--color-line` | `#d9d0c1` | Hairlines | decorative |
-| `--color-line-strong` | `#8c8576` | Input borders | 3.5:1 on paper |
-| `--color-accent`, `--color-action` | `#0b5345` | Links, primary buttons | 8.5:1 on paper; white on it 9.0:1 |
-| `--color-accent-dark`, `--color-action-hover` | `#083d33` | Hover | white on it 12.2:1 |
-| `--color-highlight` | `#f4d35e` | Highlighter, partner label, button on dark | ink on it 11.3:1 |
-| `--color-caution` | `#8a4b08` | "Blocked", cautions | 5.8:1 on its tint |
-| `--color-info` | `#274c77` | "Proposed" | 7.4:1 on its tint |
-| `--color-danger` | `#9b2c2c` | Form errors | 7.5:1 on white |
+
+`#053c5e`, `#bfdbf7`, `#a31621` and `#db222a` are used exactly as supplied.
+`#0a5f94` is a lighter step of the same blue, added so links are
+distinguishable from body text. The supplied teal `#1f7a8c` is not used.
 
 All text pairs meet WCAG 2.2 AA (4.5:1). Ratios were computed, not estimated.
-The highlighter yellow is a background only and is never used as a text colour.
+
+Components never reference the scales directly. They use role tokens
+(`--color-accent`, `--color-action`, `--color-highlight`, `--color-deep` and
+so on), so a later colour change is made in one place in `tokens.css`.
+
+Known trade-off of a two-colour system: red means both "act" (the solid
+button) and "caution" (tinted boxes, the "blocked" label, form errors). The
+two are told apart by treatment, and every caution carries text.
 
 ## Type
 

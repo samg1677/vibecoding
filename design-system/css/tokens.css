@@ -18,43 +18,56 @@
 }
 
 :root {
-  /* Colour: neutrals */
-  --color-ink: #14211f;          /* body text, dark surfaces */
-  --color-ink-soft: #44524f;     /* secondary text */
-  --color-muted: #5b6966;        /* captions, meta */
-  --color-paper: #fbf8f3;        /* page background */
+  /* Primary: blue */
+  --blue-900: #053c5e;   /* dark sections, link hover, status text */
+  --blue-700: #0a5f94;   /* links, labels, rules */
+  --blue-200: #bfdbf7;   /* highlight, partner label, button on dark */
+  --blue-100: #d6e8fb;   /* tag background */
+  --blue-50: #e9f2fc;    /* section tint */
+  --blue-25: #f8fbfe;    /* page background */
+
+  /* Secondary: red */
+  --red-700: #a31621;    /* primary button, cautions, errors */
+  --red-500: #db222a;    /* button hover, logo bar */
+  --red-50: #fbe6e7;     /* caution and error tint */
+
+  /* Neutrals: blue-tinted greys */
+  --color-ink: #0b2536;          /* body text */
+  --color-ink-soft: #3c5263;     /* secondary text */
+  --color-muted: #566b7b;        /* captions, meta */
+  --color-paper: var(--blue-25); /* page background */
   --color-surface: #ffffff;      /* cards, inputs */
-  --color-sand: #f1ebe0;         /* alternate section background */
-  --color-line: #d9d0c1;         /* hairlines */
-  --color-line-strong: #8c8576;  /* input borders (3:1 on paper) */
+  --color-sand: var(--blue-50);  /* alternate section background */
+  --color-line: #c5d6e6;         /* hairlines */
+  --color-line-strong: #6b8296;  /* input borders (3:1 on paper) */
 
-  /* Colour: brand */
-  --color-accent: #0b5345;        /* links, eyebrows: must pass 4.5:1 on paper and sand */
-  --color-accent-dark: #083d33;   /* link hover */
-  --color-accent-line: #0b5345;   /* non-text accent: rules, list markers */
-  --color-accent-tint: #e3efea;   /* quiet highlight background */
-  --color-action: #0b5345;        /* primary button */
-  --color-action-hover: #083d33;
+  /* Roles: components use these, never the scales above */
+  --color-accent: var(--blue-700);        /* links, eyebrows: 4.5:1 on paper and tint */
+  --color-accent-dark: var(--blue-900);   /* link hover */
+  --color-accent-line: var(--blue-700);   /* rules, list markers, arrows */
+  --color-accent-tint: var(--blue-50);    /* note background */
+  --color-action: var(--red-700);         /* primary button */
+  --color-action-hover: var(--red-500);
   --color-on-action: #ffffff;
-  --color-highlight: #f4d35e;     /* highlighter, partner label; never a text colour */
-  --color-highlight-tint: #fcf3cf;
-  --color-logo-accent: #14211f;   /* top bar of the logo mark */
+  --color-highlight: var(--blue-200);     /* highlighter, partner label; never a text colour */
+  --color-highlight-tint: var(--blue-50);
+  --color-logo-accent: var(--red-500);    /* top bar of the logo mark */
 
-  /* Colour: status */
-  --color-ok: #083d33;
-  --color-ok-tint: #e3efea;
-  --color-caution: #8a4b08;
-  --color-caution-tint: #fbebd3;
-  --color-info: #274c77;
-  --color-info-tint: #e4ecf5;
-  --color-danger: #9b2c2c;
-  --color-danger-tint: #f9e3e1;
+  /* Status */
+  --color-ok: var(--blue-900);
+  --color-ok-tint: var(--blue-100);
+  --color-caution: var(--red-700);
+  --color-caution-tint: var(--red-50);
+  --color-info: var(--color-ink-soft);
+  --color-info-tint: #eef1f4;
+  --color-danger: var(--red-700);
+  --color-danger-tint: var(--red-50);
 
-  /* Colour: dark sections (consultation band, footer) */
-  --color-deep: #14211f;
-  --color-on-deep: #fbf8f3;
-  --color-on-deep-muted: #b9c4c1;
-  --color-accent-on-deep: #8fd3c1;
+  /* Dark sections (consultation band, footer) */
+  --color-deep: var(--blue-900);
+  --color-on-deep: #ffffff;
+  --color-on-deep-muted: #b9cfe0;
+  --color-accent-on-deep: var(--blue-200);
 
   /* Type */
   --font-sans: "Public Sans", system-ui, -apple-system, "Segoe UI", Roboto,
