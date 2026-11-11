@@ -3,13 +3,42 @@
 Built on the intent map in `02-keyword-intent-map.md`. Titles and H1s are
 drafts; final copy is written in the CMS.
 
-## 1. Assumptions (to confirm)
+## 1. Owner decisions (2026-11-11)
 
-- Day 1 CPT Programs is its own site. The host name is a configuration value,
-  so nothing below depends on the final domain.
-- Titles carry no brand suffix for now. "… | Day 1 CPT Programs" would repeat
-  the keyword in almost every title; decide once the brand name is settled.
-- URLs use lowercase, hyphens and a trailing slash, with a maximum depth of two.
+| Decision | Answer | What it means for the build |
+|---|---|---|
+| Site scope | New standalone domain | Own host name (a configuration value). All copy is written fresh; nothing is reused from educonnectusa.com. The two sites link to each other. |
+| Brand | New independent brand | A new palette and type are proposed in stage 4. EduConnect's colours and fonts are not used. EduConnect's voice, claims policy and compliance lines still apply. |
+| Universities | Alliant University is the only recommended school and always appears first. Other universities may be discussed. | See section 1a. |
+| Next step | Pause for review of stages 2 and 3 | No design or code until the page plan is approved. |
+
+Still assumed: titles carry no brand suffix until the brand name is settled
+("… | Day 1 CPT Programs" would repeat the keyword in almost every title).
+URLs use lowercase, hyphens and a trailing slash, with a maximum depth of two.
+
+### 1a. How Alliant is featured
+
+- On `/universities/`, every program-type page and the home page, Alliant
+  University appears first in a block labelled **Featured partner**, above any
+  other school.
+- The label, the footer and the About page state that the site is operated by
+  EduConnect USA, an enrollment partner of Alliant University. A paid or
+  partner placement shown first without that disclosure would read as a
+  neutral ranking, which is misleading to readers and a compliance risk under
+  US endorsement rules.
+- Alliant is not called "best", "top-ranked" or "#1" unless the page states
+  the criteria and they are verifiable.
+- Other universities are described only from their own official websites, each
+  fact with a link and a verified date. They get no "recommended" label and no
+  inquiry form of their own; the CTA on those sections is the general
+  consultation.
+- Alliant facts (accreditor, program names, grants, start dates, locations)
+  come from EduConnect in writing or from Alliant's website. The figures in
+  the EduConnect design system are marked "verify before use" and are not
+  published until confirmed.
+- Placing Alliant first is a conversion choice. It does not by itself improve
+  search rankings; what helps is that Alliant pages can carry complete,
+  verified, first-hand program detail that the other listings cannot.
 
 ## 2. Launch sitemap (phase 1)
 
@@ -124,18 +153,17 @@ Rules the Java app enforces, so that accuracy does not depend on memory:
 - The About page and footer state who operates the site and its commercial
   relationships.
 
-## 8. Open decisions for the owner
+## 8. Still open
 
-1. **Domain and relationship to educonnectusa.com.** New standalone domain,
-   subdomain or section of the existing site, or a replacement for it.
-2. **Brand.** EduConnect USA's colours and type (the design system is marked
-   "draft, pending brand confirmation"), a new brand, or an endorsed sub-brand.
-3. **Content split** between this site and the existing EduConnect Day 1 CPT
-   pages and posts.
-4. **Which universities may be listed,** and who supplies and re-verifies
-   their data.
-5. **Named reviewer** for immigration content (the E-E-A-T and status-line
+1. **Domain name** for the new site, and the brand name if it differs from
+   "Day 1 CPT Programs".
+2. **Content split** with educonnectusa.com: which existing Day 1 CPT pages
+   and posts stay there, and which topics move to the new site.
+3. **Alliant facts sheet:** official university name to use, programs offered,
+   and each figure EduConnect approves for publication.
+4. **Named reviewer** for immigration content (the status-line and E-E-A-T
    rules need a real person).
-6. **CRM destination** for forms (HubSpot is connected to this workspace).
-7. **Hosting** for the Java app. The existing WordPress hosting noted in the
-   design system (GoDaddy Managed WordPress) can host the CMS but not the app.
+5. **CRM destination** for forms (HubSpot is connected to this workspace).
+6. **Hosting** for the Java app. The existing WordPress hosting noted in the
+   EduConnect design system (GoDaddy Managed WordPress) can host the CMS but
+   not the app.

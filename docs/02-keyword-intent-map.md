@@ -125,7 +125,9 @@ H-1B. If Day 1 CPT Programs is a separate domain:
   relationships with universities. A consultancy-run site presented as a
   neutral directory is a trust and compliance risk.
 
-This is an owner decision and is listed as open in the stage 3 document.
+Decided 2026-11-11: this is a new standalone domain with an independent brand.
+The three points above therefore apply; the content split itself is still open
+(stage 3 document, section 8).
 
 ## 7. Rules that prevent cannibalization
 
